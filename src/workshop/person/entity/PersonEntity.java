@@ -9,7 +9,7 @@ public class PersonEntity {
     public PersonEntity(){
 
     }
-    public PersonEntity(String ssn, String name, String address, String phone) {
+    public PersonEntity(String name, String ssn, String address, String phone) {
         setName(name);
         setSsn(ssn);
         setAddress(address);
