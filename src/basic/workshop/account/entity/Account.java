@@ -56,7 +56,7 @@ public class Account extends Object {
             throw new IllegalArgumentException("출금액은 0보다 커야함");
         }
         if (amount > this.balance) {
-            throw new InsufficientBalanceException("잔액이 부족합니다. 현재 잔액은: ", this.balance);
+            throw new InsufficientBalanceException ("잔액이 부족합니다. 현재 잔액은: ", this.balance);
         }
         this.balance -= amount;
     }
