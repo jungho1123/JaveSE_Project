@@ -8,7 +8,8 @@ import workshop.book.entity.ReferenceBook;
 
 public class ManageBook {
     public static void main(String[] args) {
-        Publication[] publications = {
+        Publication[] publications;
+        publications = new Publication[]{
                 new Magazine("마이크로소프트", "2007-10-01", 328, 9900, "매월"),
                 new Magazine("경영과컴퓨터", "2007-10-03", 316, 9000, "매월"),
                 new Novel("빠삐용", "2007-07-01", 396, 9800, "베르나르베르베르", "현대소설"),
