@@ -2,12 +2,16 @@ package workshop.person.control;
 
 import workshop.person.entity.PersonEntity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PersonManager {
 
     public static void main(String[] args) {
 
         PersonManager pManager = new PersonManager();
         PersonEntity[] persons = new PersonEntity[10];
+
         pManager.fillPersons(persons);
         pManager.showPersons(persons);
         char gender='여';
