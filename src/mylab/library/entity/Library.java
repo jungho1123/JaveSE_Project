@@ -13,6 +13,11 @@ public class Library {
         this.books=new ArrayList<>();
 
     }
+
+    public String getName() {
+        return name;
+    }
+
     public void addBook(Book book){
         books.add(book);
     }
