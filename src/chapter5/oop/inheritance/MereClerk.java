@@ -14,6 +14,7 @@ public class MereClerk extends Employee {
 	}
 	
 	//급여계산
+	@Override
 	public void manageSalary(double rate) {
 		salary = salary + salary*(rate/100);
 	}
