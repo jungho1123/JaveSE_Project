@@ -25,17 +25,16 @@ public class ManageBook {
 
     }
     public static void modifyPrice(Publication p){
-        int price=p.getPrice();
+        double rate=0.0;
         if (p instanceof Magazine){
-            p.setPrice((int)(price*0.6));
-        } else if (p instanceof  Novel) {
-            p.setPrice((int)(price*0.8));
+            rate=0.6;
+        } else if (p instanceof Novel) {
+            rate=0.8;
 
-        } else if (p instanceof  ReferenceBook) {
-            p.setPrice((int)(price*0.9));
-
+        } else if (p instanceof ReferenceBook) {
+            rate=0.9;
         }
+        p.setPrice((int)(p.getPrice()*rate));
     }
-
 
 }
