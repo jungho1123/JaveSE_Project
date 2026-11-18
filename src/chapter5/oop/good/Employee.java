@@ -1,8 +1,8 @@
 package chapter5.oop.good;
 
 public class Employee {
-    String name;
-    double salary;
+    private String name;
+    protected double salary;
 
     public Employee(String name, double salary) {
         this.name = name;
