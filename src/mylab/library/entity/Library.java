@@ -21,7 +21,7 @@ public class Library {
     // 도서 추가
     public void addBook(Book book) {
         books.add(book);
-        System.out.println("도서가 추가되었습니다: " + book.getTitle());
+        System.out.println("도서가 추가되었습니다: " + book.getTitle( ));
     }
 
     // 제목으로 검색
