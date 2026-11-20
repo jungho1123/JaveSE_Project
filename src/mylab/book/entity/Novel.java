@@ -8,5 +8,40 @@ package mylab.book.entity;
  * author: 저자명
  * genre: 장르 (예: "판타지", "로맨스")
  */
-public class Novel {
+public class Novel extends Publication{
+    private String author;
+    private String genre;
+
+    public Novel() {
+    }
+
+    public Novel(String title, String publishDate, int page, int price, String author, String genre) {
+        super(title, publishDate, page, price);
+        this.author = author;
+        this.genre = genre;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+    @Override
+    public String toString() {
+        return "Novel{" +
+                "genre='" + genre + '\'' +
+                ", author='" + author + '\'' +
+                '}';
+    }
 }
