@@ -30,7 +30,7 @@ public class BankDemo {
 
             // 이자 적용 테스트
             System.out.println("=== 이자 적용 테스트 ===");
-            ((SavingsAccount)bank.findAccount(savingsAccount1)).applyInterest();
+            ((SavingsAccount)bank.findAccount(savingsAccount1)).applyInterestRate();
 
             System.out.println();
 
