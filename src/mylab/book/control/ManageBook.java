@@ -37,6 +37,8 @@ public class ManageBook {
         int prev_price=publications[2].getPrice();
         System.out.println("변경전가격:"+prev_price);
         modifyPrice(publications[2]);
+        StatisticsAnalyzer statisticsAnalyzer=new StatisticsAnalyzer();
+        statisticsAnalyzer.printStatistics(publications);
 
     }
 

@@ -84,6 +84,36 @@ public class ShoppingCart {
         System.out.println("참고서: " + referenceBookCount + "권");
         System.out.println("총 출판물: " + items.size() + "권"); }
 
+    /**
+     *
+     * 마이크로소프트이(가) 장바구니에 추가되었습니다.
+     * 경영과컴퓨터이(가) 장바구니에 추가되었습니다.
+     * 빠삐용이(가) 장바구니에 추가되었습니다.
+     * 남한산성이(가) 장바구니에 추가되었습니다.
+     * 실용주의프로그래머이(가) 장바구니에 추가되었습니다.
+     *
+     */
+
+
+    public static void main(String[] args) {
+        ShoppingCart shoppingCart= new ShoppingCart();
+        shoppingCart.addItem(new Magazine("마이크로소프트", "2007-10-01", 328, 9900, "매월"));
+        shoppingCart.addItem(new Magazine("경영과컴퓨터", "2007-10-03", 316, 9000, "매월"));
+        shoppingCart.addItem(new Novel("빠삐용", "2007-07-01", 396, 9800, "베르나르베르베르", "현대소설"));
+        shoppingCart.addItem(new Novel("남한산성", "2007-04-14", 383, 11000, "김훈", "대하소설"));
+        shoppingCart.addItem(new ReferenceBook("실용주의프로그래머", "2007-01-14", 496, 25000, "소프트웨어공학"));
+        shoppingCart.displayCart();
+        System.out.println("총가격:"+shoppingCart.calculateTotalPrice());
+        System.out.println("할인적용가격:"+shoppingCart.calculateDiscountedPrice());
+        shoppingCart.printStatistics();
+        shoppingCart.removeItem("빠삐용");
+        shoppingCart.displayCart();
+        System.out.println("총가격:"+shoppingCart.calculateTotalPrice());
+        System.out.println("할인적용가격:"+shoppingCart.calculateDiscountedPrice());
+
+
+
+    }
 
 
 }
