@@ -37,7 +37,9 @@ public class ShoppingCart {
     public void displayCart(){
         for (int i=0; i<items.size();i++){
             Publication publication=items.get(i);
-            System.out.println(publication);
+            String title=publication.getTitle();
+            int price=publication.getPrice();
+            System.out.println(i+1 +title+"-"+price+"원");
         }
 
     }
